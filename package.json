@@ -11,7 +11,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "cssnano": "^6.0.1",
+    "eleventy-plugin-automatic-noopener": "^2.0.2",
+    "eleventy-sass": "^2.2.3",
+    "postcss": "^8.4.24",
+    "postcss-preset-env": "^8.5.1"
   },
   "dependencies": {
     "@punkfairie/modern-css-reset": "^1.0.1"
