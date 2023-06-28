@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "@punkfairie/modern-css-reset": "^1.0.1"
   }
 }
