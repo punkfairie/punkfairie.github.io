@@ -1,0 +1,6 @@
+@use '../theme';
+
+.Body {
+  background: theme.$purple;
+  background: linear-gradient(135deg, theme.$purple 0%, theme.$pink 100%);
+}
