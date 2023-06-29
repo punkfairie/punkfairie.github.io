@@ -6,5 +6,9 @@ module.exports = function (eleventyConfig) {
     ]),
   })
 
+  eleventyConfig.addPlugin(require('eleventy-plugin-automatic-noopener'), {
+    noreferrer: true,
+  })
+
   return {dir: {input: 'src', output: 'dist'}}
 }
