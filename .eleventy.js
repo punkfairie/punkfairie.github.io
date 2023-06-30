@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
     })
   })
 
-  eleventyConfig.addWatchTarget('./src/style/**/*.css')
+  eleventyConfig.addWatchTarget('./src/style/')
 
   eleventyConfig.addPlugin(require('eleventy-plugin-automatic-noopener'), {
     noreferrer: true,
