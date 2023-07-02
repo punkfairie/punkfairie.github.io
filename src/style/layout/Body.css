@@ -3,6 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Delius Swash Caps', handwriting, sans-serif;
+    font-size: var(--t-step-0);
     background: var(--c-purple);
     background: linear-gradient(135deg, var(--c-purple) 0%, var(--c-pink) 100%);
   }

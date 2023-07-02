@@ -2,4 +2,13 @@
   .Header {
     flex-grow: 0;
   }
+
+  .Header-title {
+    font-size: var(--t-step-5);
+  }
+
+  .Header-email {
+    font-size: var(--t-step--1);
+    transform: translateY(-100%);
+  }
 }
