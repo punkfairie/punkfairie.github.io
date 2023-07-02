@@ -4,5 +4,6 @@
     flex-grow: 1;
     align-items: center;
     inline-size: 90%;
+    transform: translateY(-3%);
   }
 }

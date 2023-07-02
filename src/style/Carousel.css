@@ -1,14 +1,29 @@
 @layer components {
+  .Carousel {
+    display: flex;
+    overflow: scroll;
+    inline-size: 70%;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  .Carousel::-webkit-scrollbar {
+    /* stylelint-disable plugin/use-logical-properties-and-values */
+    width: 0;
+    height: 0;
+    /* stylelint-enable plugin/use-logical-properties-and-values */
+  }
+
   .Carousel-item {
     display: flex;
+    flex: 1 0 100%;
     flex-direction: column;
     gap: var(--space-xs);
     align-items: center;
     justify-content: center;
     margin: auto;
-    block-size: 100%;
-    inline-size: 70%;
     text-align: center;
+    inline-size: 100%;
   }
 
   /* stylelint-disable-next-line a11y/media-prefers-reduced-motion */
@@ -25,8 +40,9 @@
   }
 
   .Carousel-controls {
-    --Carousel-controls-translateY: -100%;
+    --Carousel-controls-translateY: -70%;
 
+    flex-grow: 1;
     font-size: var(--t-step-2);
     cursor: pointer;
     background: none;
@@ -36,10 +52,12 @@
 
   .Carousel-controls--left {
     order: -100;
+    text-align: start;
   }
 
   .Carousel-controls--right {
     order: 100;
+    text-align: end;
   }
 
   @media (prefers-reduced-motion: reduce) {
