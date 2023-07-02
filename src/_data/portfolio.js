@@ -42,7 +42,7 @@ module.exports = [
   {
     img: 'results-summary-component.png',
     github: 'https://github.com/punkfairie/frontend-mentor/tree/main/results-summary-component',
-    title: 'Frontend Mentor: Results Summary Component',
+    title: 'Frontend Mentor: Results Summary',
     live: 'https://frontend-mentor-gold-five.vercel.app/',
     description: 'Exercise for Frontend Mentor.',
     tech: 'Made with Vite and PostCSS.',

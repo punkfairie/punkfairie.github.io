@@ -23,7 +23,7 @@
     justify-content: center;
     margin: auto;
     text-align: center;
-    inline-size: 100%;
+    padding: 0 var(--space-s);
   }
 
   /* stylelint-disable-next-line a11y/media-prefers-reduced-motion */
@@ -73,18 +73,16 @@
 
   @media (prefers-reduced-motion: no-preference) {
     .Carousel-controls {
-      transition: translate 300ms, padding-inline-end 300ms;
+      transition: translate 300ms;
     }
 
     .Carousel-controls--left:hover, .Carousel-controls--left:focus {
-      padding-inline-end: 0.25rem;
-      transition: translate 300ms, padding-inline-end 300ms;
+      transition: translate 300ms;
       translate: -0.25rem var(--Carousel-controls-translateY);
     }
 
     .Carousel-controls--right:hover, .Carousel-controls--right:focus {
-      padding-inline-start: 0.25rem;
-      transition: translate 300ms, padding-inline-end 300ms;
+      transition: translate 300ms;
       translate: 0.25rem var(--Carousel-controls-translateY);
     }
   }

@@ -29,12 +29,13 @@
   </header>
 
   <main class="Main">
-    <div class="Carousel">
+    <div class="Carousel" id="carousel">
+      {%- for project in portfolio -%}
         <div class="Carousel-item">
-          {% if project.img %}
+          {%- if project.img -%}
             <img src="/portfolio/{{ project.img }}"
               alt="Screenshot of punkfairie.net" class="Carousel-img">
-          {% endif %}
+          {%- endif -%}
 
 
           <div class="Carousel-title">
@@ -43,28 +44,28 @@
 
             {{ project.title }}
 
-            {% if project.live %}
+            {%- if project.live -%}
               / <a href="{{ project.live }}" target="_blank"><i
                 class="fa-solid fa-link" title="Visit project"></i></a>
-            {% endif %}
+            {%- endif -%}
           </div>
 
           <p class="Carousel-text">{{ project.description }}</p>
 
-          {% if project.tech %}
+          {%- if project.tech -%}
             <p class="Carousel-text">{{ project.tech }}</p>
-          {% endif %}
+          {%- endif -%}
         </div>
-      {% endfor %}
+      {%- endfor -%}
     </div>
 
     <button class="Carousel-controls Carousel-controls--left"
-      id="carousel-left">
+      id="carousel-prev">
       <i class="fa-solid fa-chevron-left" title="Previous item"></i>
     </button>
 
     <button class="Carousel-controls Carousel-controls--right"
-      id="carousel-right">
+      id="carousel-next">
       <i class="fa-solid fa-chevron-right" title="Next item"></i>
     </button>
   </main>
