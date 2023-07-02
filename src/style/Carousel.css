@@ -1,0 +1,21 @@
+@layer components {
+  .Carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    block-size: 100%;
+    inline-size: 60%;
+  }
+
+  .Carousel-img {
+    padding: var(--space-3xs);
+    border: var(--space-3xs) solid var(--c-pink);
+  }
+
+  /* stylelint-disable-next-line a11y/media-prefers-reduced-motion */
+  .Carousel-img:hover, .Carousel-img:focus {
+    border-color: var(--c-purple);
+    transition: border-color 500ms;
+  }
+}

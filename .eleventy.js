@@ -36,5 +36,8 @@ module.exports = function (eleventyConfig) {
     noreferrer: true,
   })
 
+  eleventyConfig.addPassthroughCopy('./src/portfolio/')
+  eleventyConfig.addPassthroughCopy('./src/fontawesome/')
+
   return {dir: {input: 'src', output: 'dist'}}
 }

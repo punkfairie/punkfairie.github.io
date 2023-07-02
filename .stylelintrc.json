@@ -1,3 +1,6 @@
 {
-  "extends": "@punkfairie/stylelint-config"
+  "extends": "@punkfairie/stylelint-config",
+  "rules": {
+    "scale-unlimited/declaration-strict-value": false
+  }
 }
