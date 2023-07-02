@@ -1,6 +1,8 @@
 @layer base {
+  /* stylelint-disable a11y/media-prefers-reduced-motion */
   a {
     color: var(--c-pink);
+    transition: color 300ms;
   }
 
   a:hover, a:focus {

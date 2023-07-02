@@ -1,18 +1,21 @@
 @layer components {
-  .Carousel {
+  .Carousel-item {
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
     align-items: center;
+    justify-content: center;
     margin: auto;
     block-size: 100%;
     inline-size: 70%;
     text-align: center;
   }
 
+  /* stylelint-disable-next-line a11y/media-prefers-reduced-motion */
   .Carousel-img {
     padding: var(--space-3xs);
     border: var(--space-3xs) solid var(--c-pink);
+    transition: border-color 500ms;
   }
 
   /* stylelint-disable-next-line a11y/media-prefers-reduced-motion */

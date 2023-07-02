@@ -29,24 +29,33 @@
   </header>
 
   <main class="Main">
-    <div class="Carousel">
-      <img src="/portfolio/punkfairie.net.png"
-        alt="Screenshot of punkfairie.net" class="Carousel-img">
+    {% for project in portfolio %}
+      <div class="Carousel-item">
+        {% if project.img %}
+          <img src="/portfolio/{{ project.img }}"
+            alt="Screenshot of punkfairie.net" class="Carousel-img">
+        {% endif %}
 
-      <div class="Carousel-title">
-        <a href="https://github.com/punkfairie/punkfairie-site"
-          target="_blank"><i class="fa-brands fa-github"
-            title="Github"></i></a> /
-        punkfairie.net /
-        <a href="https://punkfairie.net/" target="_blank"><i
-            class="fa-solid fa-link" title="Visit project"></i></a>
+
+        <div class="Carousel-title">
+          <a href="{{ project.github }}" target="_blank"><i
+              class="fa-brands fa-github" title="Github"></i></a> /
+
+          {{ project.title }}
+
+          {% if project.live %}
+            / <a href="{{ project.live }}" target="_blank"><i
+              class="fa-solid fa-link" title="Visit project"></i></a>
+          {% endif %}
+        </div>
+
+        <p class="Carousel-text">{{ project.description }}</p>
+
+        {% if project.tech %}
+          <p class="Carousel-text">{{ project.tech }}</p>
+        {% endif %}
       </div>
-
-      <p class="Carousel-text">A personal site; includes blinkie
-        collections and a diary (blog).</p>
-
-      <p class="Carousel-text">Made with Eleventy and SCSS.</p>
-    </div>
+    {% endfor %}
 
     <button class="Carousel-controls Carousel-controls--left"
       id="carousel-left">
