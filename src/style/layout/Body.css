@@ -1,5 +1,8 @@
 @layer layout {
   .Body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--c-purple);
     background: linear-gradient(135deg, var(--c-purple) 0%, var(--c-pink) 100%);
   }

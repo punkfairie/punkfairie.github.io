@@ -1,0 +1,5 @@
+@layer layout {
+  .Footer {
+    flex-grow: 0;
+  }
+}

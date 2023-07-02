@@ -1,4 +1,7 @@
-@import 'theme.css';
-
-@import 'layout/Body.css';
-@import 'layout/Site.css';
+@import url('@punkfairie/modern-css-reset');
+@import url('theme.css');
+@import url('layout/Body.css');
+@import url('layout/Site.css');
+@import url('layout/Header.css');
+@import url('layout/Main.css');
+@import url('layout/Footer.css');

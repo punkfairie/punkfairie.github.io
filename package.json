@@ -12,12 +12,15 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@punkfairie/stylelint-config": "^1.0.1",
+    "circletype": "^2.3.0",
     "cssnano": "^6.0.1",
     "eleventy-plugin-automatic-noopener": "^2.0.2",
     "postcss": "^8.4.24",
     "postcss-import": "^15.1.0",
     "postcss-import-ext-glob": "^2.1.1",
-    "postcss-preset-env": "^8.5.1"
+    "postcss-preset-env": "^8.5.1",
+    "stylelint": "^15.9.0"
   },
   "dependencies": {
     "@punkfairie/modern-css-reset": "^1.0.1"

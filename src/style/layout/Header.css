@@ -1,0 +1,5 @@
+@layer layout {
+  .Header {
+    flex-grow: 0;
+  }
+}

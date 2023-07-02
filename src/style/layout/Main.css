@@ -1,0 +1,5 @@
+@layer layout {
+  .Main {
+    flex-grow: 1;
+  }
+}
