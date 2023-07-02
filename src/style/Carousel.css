@@ -21,9 +21,10 @@
     gap: var(--space-xs);
     align-items: center;
     justify-content: center;
+    max-inline-size: 100vi;
+    padding: 0 var(--space-s);
     margin: auto;
     text-align: center;
-    padding: 0 var(--space-s);
   }
 
   /* stylelint-disable-next-line a11y/media-prefers-reduced-motion */
@@ -48,6 +49,12 @@
     background: none;
     border: none;
     translate: 0 var(--Carousel-controls-translateY);
+  }
+
+  @media (width <= 1000px) {
+    .Carousel-controls {
+      color: transparent;
+    }
   }
 
   .Carousel-controls--left {
