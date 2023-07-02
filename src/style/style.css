@@ -1,5 +1,8 @@
+@layer reset, base, layout, components;
+
 @import url('@punkfairie/modern-css-reset');
 @import url('theme.css');
+@import url('base.css');
 @import url('layout/Body.css');
 @import url('layout/Site.css');
 @import url('layout/Header.css');

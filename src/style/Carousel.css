@@ -2,10 +2,12 @@
   .Carousel {
     display: flex;
     flex-direction: column;
+    gap: var(--space-xs);
     align-items: center;
     margin: auto;
     block-size: 100%;
     inline-size: 60%;
+    text-align: center;
   }
 
   .Carousel-img {

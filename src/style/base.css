@@ -1,0 +1,10 @@
+@layer base {
+  a {
+    color: var(--c-pink);
+  }
+
+  a:hover, a:focus {
+    color: var(--c-purple);
+    transition: color 300ms;
+  }
+}
