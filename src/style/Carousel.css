@@ -6,7 +6,7 @@
     align-items: center;
     margin: auto;
     block-size: 100%;
-    inline-size: 60%;
+    inline-size: 70%;
     text-align: center;
   }
 
@@ -19,5 +19,52 @@
   .Carousel-img:hover, .Carousel-img:focus {
     border-color: var(--c-purple);
     transition: border-color 500ms;
+  }
+
+  .Carousel-controls {
+    --Carousel-controls-translateY: -100%;
+
+    font-size: var(--t-step-2);
+    cursor: pointer;
+    background: none;
+    border: none;
+    translate: 0 var(--Carousel-controls-translateY);
+  }
+
+  .Carousel-controls--left {
+    order: -100;
+  }
+
+  .Carousel-controls--right {
+    order: 100;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .Carousel-controls {
+      transition: color 300ms;
+    }
+
+    .Carousel-controls:hover, .Carousel-controls:focus {
+      color: var(--c-purple);
+      transition: color 300ms;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .Carousel-controls {
+      transition: translate 300ms, padding-inline-end 300ms;
+    }
+
+    .Carousel-controls--left:hover, .Carousel-controls--left:focus {
+      padding-inline-end: 0.25rem;
+      transition: translate 300ms, padding-inline-end 300ms;
+      translate: -0.25rem var(--Carousel-controls-translateY);
+    }
+
+    .Carousel-controls--right:hover, .Carousel-controls--right:focus {
+      padding-inline-start: 0.25rem;
+      transition: translate 300ms, padding-inline-end 300ms;
+      translate: 0.25rem var(--Carousel-controls-translateY);
+    }
   }
 }
